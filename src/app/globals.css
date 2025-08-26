@@ -1,26 +1,137 @@
 @import "tailwindcss";
+@import "../components/ui/Btn/Btn.css";
+
+html,
+body {
+  height: 100%;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sizeBorda: 0%;
+  --accentColor: #cbee87;
+  --lightColor: #f3f0eb;
+  --bgDrkColor: #0c1517;
+  /* --bgDrkColor: #000000; */
+  --baseColor: #0c1517;
+
+  --redColor: #ed5a43;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.heroTitle {
+  color: black;
+  background: linear-gradient(217deg, #f3f0eb 35.5%, #dfe830 119.1%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(3rem, 5vw, 9rem);
+  line-height: clamp(3.2rem, 5vw, 9.4rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.heroSubtitle {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  line-height: clamp(1.2rem, 5vw, 2.4rem);
+}
+
+.btnContainer::before {
+  content: "";
+  display: flex;
+  height: var(--sizeBorda);
+
+  width: 2px;
+  background: #4b4b4bf2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+}
+
+@media (width <= 64rem) {
+  .btnContainer::before {
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.btnDescription {
+  transform: translateY(100px);
+  opacity: 0;
 }
+
+.btnDiv {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.titleSize {
+  font-size: clamp(3rem, 6vw, 5.3rem);
+  line-height: clamp(3.2rem, 6vw, 5.7rem);
+}
+
+.textSize {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  line-height: clamp(1.5rem, 6vw, 2.8rem);
+}
+.bulletItemTitle {
+  font-size: clamp(2rem, 6vw, 2.5rem);
+  line-height: clamp(1.5rem, 6vw, 2.8rem);
+}
+
+.heroSection,
+.imgSection,
+.bulletsSection {
+  background: #0c1517;
+}
+
+.bulletIcon {
+  stroke: #0c1517;
+  height: 2rem;
+  width: 2rem;
+}
+
+.textCardSize {
+  font-size: clamp(1rem, 6vw, 1.2rem);
+  line-height: clamp(1.2rem, 6vw, 1.3rem);
+}
+
+.cardIcon {
+  width: 6rem;
+  height: auto;
+}
+
+.cardService {
+  position: sticky;
+  max-width: 25%;
+  height: 600px;
+}
+
+.cardDesign {
+  top: 5%;
+}
+
+.cardDev {
+  top: 10%;
+  left: 25%;
+}
+
+.cardOptimization {
+  top: 15%;
+  left: 50%;
+}
+.cardSuport {
+  top: 20%;
+  left: 75%;
+
+  background: var(--redColor);
+}
+
+/* .borderBulletCard {
+  position: relative;
+}
+
+.borderBulletCard::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  right: -1%;
+  width: 1px;
+  height: 100%;
+  background: black;
+} */
