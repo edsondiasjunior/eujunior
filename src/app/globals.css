@@ -9,27 +9,27 @@ body {
 :root {
   --sizeBorda: 0%;
   --accentColor: #cbee87;
-  --lightColor: #f3f0eb;
-  --bgDrkColor: #0c1517;
-  /* --bgDrkColor: #000000; */
-  --baseColor: #0c1517;
+  --lightColor: #f2eed9;
+  --bgDrkColor: #26251f;
+  --baseColor: #26251f;
 
   --redColor: #ed5a43;
 }
 
 .heroTitle {
   color: black;
-  background: linear-gradient(217deg, #f3f0eb 35.5%, #dfe830 119.1%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: clamp(3rem, 5vw, 9rem);
-  line-height: clamp(3.2rem, 5vw, 9.4rem);
+  /* background: linear-gradient(217deg, #f3f0eb 35.5%, #dfe830 119.1%); */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+
+  font-size: clamp(3rem, 5vw, 3.6rem);
+  line-height: clamp(3.2rem, 5vw, 4.2rem);
 }
 
 .heroSubtitle {
-  font-size: clamp(1rem, 5vw, 1.5rem);
-  line-height: clamp(1.2rem, 5vw, 2.4rem);
+  font-size: clamp(1rem, 5vw, 2rem);
+  line-height: clamp(1.2rem, 5vw, 2.2rem);
 }
 
 .btnContainer::before {
@@ -61,8 +61,8 @@ body {
   opacity: 0;
 }
 .titleSize {
-  font-size: clamp(3rem, 6vw, 5.3rem);
-  line-height: clamp(3.2rem, 6vw, 5.7rem);
+  font-size: clamp(3rem, 6vw, 4rem);
+  line-height: clamp(3.2rem, 6vw, 4.2rem);
 }
 
 .textSize {
@@ -122,16 +122,8 @@ body {
   background: var(--redColor);
 }
 
-/* .borderBulletCard {
-  position: relative;
+.imgDivUm img,
+.imgDivDois img {
+  width: auto;
+  height: 500px;
 }
-
-.borderBulletCard::after {
-  content: "";
-  display: flex;
-  position: absolute;
-  right: -1%;
-  width: 1px;
-  height: 100%;
-  background: black;
-} */
