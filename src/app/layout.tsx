@@ -41,6 +41,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Web Designer - Edson Junior",
   description: "Criação e desenvolvimento de sites profissionais",
+  icons: {
+    icon: "/favicon.png",
+  }
 };
 
 export default function RootLayout({
