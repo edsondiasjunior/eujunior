@@ -8,10 +8,10 @@ body {
 
 :root {
   --sizeBorda: 0%;
-  --accentColor: #cbee87;
+  --accentColor: #b2f10c;
   --lightColor: #f2eed9;
   --bgDrkColor: #26251f;
-  --baseColor: #26251f;
+  --baseColor: #fcfff8;
 
   --redColor: #ed5a43;
 }

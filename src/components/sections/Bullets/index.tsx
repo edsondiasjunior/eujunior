@@ -1,111 +1,104 @@
 "use client";
-import Image from "next/image";
+
+import { Medal } from "lucide-react";
+import Btn from "@/components/ui/Btn/index";
 
 export function Bullets() {
   return (
-    <section className="grid grid-cols-6 py-28 px-8  gap-y-24 bg-[var(--baseColor)] ">
-      <h2 className=" col-span-4 col-start-2  font-[nohemi] text-[var(--lightColor)] text-center font-normal titleSize  sticky top-[5rem] ">
-        Seu site pode ser uma ferramenta que gera resultados constantes.
-      </h2>
-
-      <div className="col-span-4 col-start-2 flex flex-col gap-40 items-center ">
-        <article className="grid grid-cols-4 gap-8 w-full h-[350px] bg-[#DFDA95] rounded-3xl pr-4 sticky top-[20rem]">
-          <div className="col-span-2 justify-self-center self-end">
-            <Image
-              src="/icon_card_1.webp"
-              alt="Icone"
-              width={363}
-              height={206}
-            />
-          </div>
-
-          <div className="col-span-2 flex flex-col gap-4 self-center">
-            <div className="flex">
-              <h3 className="font-[nohemi] font-medium text-[var(--baseColor)] text-5xl ">
-                Com as Informações claras e rápidas,
-              </h3>
-            </div>
-            <p className="text-3xl leading-7 text-[var(--baseColor)] max-w-[360px]">
-              seu cliente entende sua proposta em segundos.
-            </p>
-          </div>
-        </article>
-
-        <article className="grid grid-cols-4 gap-8 w-full h-[350px] bg-[#CBEE87] rounded-3xl z-1 pr-4 sticky top-[22rem]">
-          <div className="col-span-2 justify-self-center self-end">
-            <Image
-              src="/icon_card_2.webp"
-              alt="Icone"
-              width={363}
-              height={206}
-            />
-          </div>
-
-          <div className="col-span-2 flex flex-col gap-4  self-center">
-            <div className="flex">
-              <h3 className="font-[nohemi] font-medium text-[var(--baseColor)] text-5xl ">
-                O Design intuitivo,
-              </h3>
-            </div>
-            <p className="text-3xl leading-7 text-[var(--baseColor)] max-w-[360px]">
-              ele navega com facilidade, sem perder tempo.
-            </p>
-          </div>
-        </article>
-
-        <article className="grid grid-cols-4 gap-8 w-full h-[350px] bg-[#84CCA4] rounded-3xl z-2 pr-4 sticky top-[24rem]">
-          <div className="col-span-2 justify-self-center self-end">
-            <Image
-              src="/icon_card_3.webp"
-              alt="Icone"
-              width={363}
-              height={206}
-            />
-          </div>
-
-          <div className="col-span-2 flex flex-col gap-4  self-center ">
-            <div className="flex">
-              <h3 className="font-[nohemi] font-medium text-[var(--baseColor)] text-5xl ">
-                O Conteúdo bem estruturado,
-              </h3>
-            </div>
-            <p className="text-3xl leading-7 text-[var(--baseColor)] max-w-[360px]">
-              ele encontra o que procura, quando precisa.
-            </p>
-          </div>
-        </article>
-
-        <article className="grid grid-cols-4 gap-8 w-full h-[350px] bg-[#57B17F] rounded-3xl z-3 pr-4 sticky top-[26rem]">
-          <div className="col-span-2 justify-self-center self-end">
-            <Image
-              src="/icon_card_4.webp"
-              alt="Icone"
-              width={363}
-              height={206}
-            />
-          </div>
-
-          <div className="col-span-2 flex flex-col gap-4 self-center ">
-            <div className="flex">
-              <h3 className="font-[nohemi] font-medium text-[var(--baseColor)] text-5xl ">
-                E a Identidade visual consitente,
-              </h3>
-            </div>
-            <p className="text-3xl leading-7 text-[var(--baseColor)] max-w-[360px]">
-              que garante sua imagem profissional.
-            </p>
-          </div>
-        </article>
-      <div className="z-4 sticky top-0 h-[100vh]">
-        <h2 className="font-[nohemi] text-[var(--lightColor)] text-center font-normal titleSize">Você pode ter um site que realmente trabalha por você.</h2>
-        <p className="text-center text-3xl text-[var(--lightColor)]">
-          Com tudo isso funcionando junto, fica muito mais fácil conquistar a
-          confiança de quem visita e transformar esse interesse em novos
-          clientes todos os dias.
+    <section className="flex flex-col grid-cols-6 py-28 px-4  gap-y-24 bg-[#022124] ">
+      <div className="flex flex-col gap-8 sticky top-[2.5rem]">
+        <h2 className=" col-span-4 col-start-2  font-[nohemi] text-[#A4E004] text-center font-normal text-[2rem]  sticky top-[rem] ">
+          Provavelmente, você quer fazer parte dos que aparecem na pesquisa do
+          Google, certo?
+        </h2>
+        <p className="font-[nohemi] text-white text-center text-base">
+          Trabalho com 3 pilares essenciais para você ter uma presença digital
+          que gera resultados
         </p>
       </div>
-      </div>
 
+      <div className="col-span-4 col-start-2 flex flex-col gap-40 items-center ">
+
+        <article className="flex flex-col items-center justify-between p-8 w-full h-[350px] bg-[#A4E004] rounded-3xl sticky top-[20rem]">
+          <div className=" flex justify-end w-full">
+            <Medal size={48} />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
+              <h3 className="font-[nohemi] font-medium text-[#022124] text-5xl ">
+                Presença Profissional
+              </h3>
+              <p className="text-[1rem] leading-7 text-[#022124] max-w-[360px]">
+                Site institucional com design exclusivo, estratégia de conteúdo
+                e desenvolvimento focado em transmitir credibilidade e gerar
+                conversões
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="flex flex-col justify-between p-8 w-full h-[350px] bg-[#FCFFF8] rounded-3xl sticky top-[22rem]">
+          <div className=" flex justify-end w-full">
+            <Medal size={48} />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
+              <h3 className="font-[nohemi] font-medium text-[#022124] text-5xl ">
+                Alcance Total
+              </h3>
+              <p className="text-[1rem] leading-7 text-[#022124] max-w-[360px]">
+                Design responsivo com abordagem mobile-first  e código otimizado para performance impecável  em desktop, tablet e smartphone
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="flex flex-col items-center justify-between p-8 w-full h-[350px] bg-[#A4E004] rounded-3xl sticky top-[24rem]">
+          <div className=" flex justify-end w-full">
+            <Medal size={48} />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
+              <h3 className="font-[nohemi] font-medium text-[#022124] text-5xl ">
+                Visibilidade Garantida
+              </h3>
+              <p className="text-[1rem] leading-7 text-[#022124] max-w-[360px]">
+                SEO técnico, estrutura semântica e otimização  de velocidade para você aparecer no topo das  pesquisas do Google
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article className="flex flex-col justify-between p-8 w-full h-[350px] bg-[#FCFFF8] rounded-3xl sticky top-[26rem]">
+          <div className=" flex justify-end w-full">
+            <Medal size={48} />
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
+              <h3 className="font-[nohemi] font-medium text-[#022124] text-5xl ">
+                Alcance Total
+              </h3>
+              <p className="text-[1rem] leading-7 text-[#022124] max-w-[360px]">
+                Design responsivo com abordagem mobile-first  e código otimizado para performance impecável  em desktop, tablet e smartphone
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <div className="flex flex-col gap-8 items-center justify-center z-4 bg-amber-50 sticky top-[5%] h-[90vh] rounded-2xl">
+          <h2 className="font-[nohemi] text-[#022124] text-center font-normal titleSize">
+            Pronto para ter um site que trabalha por você?
+          </h2>
+          <p className="text-center text-3xl text-[#022124]">
+            Chama no WhatsApp e vamos bater um papo sobre seu projeto.
+          </p>
+          <Btn />
+        </div>
+      </div>
     </section>
   );
 }

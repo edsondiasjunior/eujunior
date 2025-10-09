@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LinkedinLogo, BehanceLogo, DribbbleLogo, GithubLogo, DownloadSimple, ArrowUpRight } from "@phosphor-icons/react/ssr";
+import {
+  LinkedinLogo,
+  BehanceLogo,
+  DribbbleLogo,
+  GithubLogo,
+  DownloadSimple,
+  ArrowUpRight,
+} from "@phosphor-icons/react/ssr";
 export default function Cv() {
   return (
     <>
@@ -38,15 +45,15 @@ export default function Cv() {
         <div className="col-span-1 lg:col-span-6 flex flex-col items-center justify-center bg-[#191D20] rounded-3xl p-[3rem] ">
           <div className=" flex flex-col gap-4">
             <p className=" gap-2 text-[#D9D9D9] text-[1rem] hidden lg:flex w-fit border border-[#7a7a7a] rounded-full px-8 py-3 mb-[1rem]">
-            Hello, eu sou o <strong>Junior</strong>{" "}
-            <Image
-              src="/hand-icon.webp"
-              alt="mão acenando"
-              height={15}
-              width={15}
-              className="h-[16px] w-[16px]"
-            />
-          </p>
+              Hello, eu sou o <strong>Junior</strong>{" "}
+              <Image
+                src="/hand-icon.webp"
+                alt="mão acenando"
+                height={15}
+                width={15}
+                className="h-[16px] w-[16px]"
+              />
+            </p>
             <h1 className="text-[#B2F10C] font-[nohemi] font-bold text-6xl text-center lg:text-start  lg:text-7xl ">
               UI/UX & Web Designer
             </h1>
@@ -55,24 +62,22 @@ export default function Cv() {
             </p>
             <div className="flex flex-col lg:flex-row gap-8 items-center mt-6">
               <Link
-                className="flex gap-2 items-center justify-center bg-[#B2F10C] py-2 px-8 rounded-full text-[20px]"
-                href="http://wa.me//+5511998343115" target="_blank"
+                className="group flex gap-2 items-center justify-between bg-[#B2F10C] pl-4 pr-2 py-2 rounded-full text-[20px]"
+                href="http://wa.me//+5511998343115"
+                target="_blank"
               >
-                <p>
-
-                Contato
-                </p>
-                <ArrowUpRight size={24} />
+                <p>Contato</p>
+                <span className="bg-black flex items-center justify-center rounded-full w-[2.5rem] h-[2.5rem]">
+                  <ArrowUpRight size={24} color="#D9D9D9" />
+                </span>
               </Link>
               <Link
                 className="flex gap-4 items-center justify-center text-[#D9D9D9] rounded-full text-[20px]"
-                href="/edson_junior_web_designer.pdf" target="_blank"
+                href="/edson_junior_web_designer.pdf"
+                target="_blank"
               >
-                <p>
+                <p>Download CV</p>
 
-                Download CV 
-                </p>
-                
                 <DownloadSimple size={24} />
               </Link>
             </div>
@@ -139,10 +144,7 @@ export default function Cv() {
             className="col-span-1 lg:col-span-3 flex items-center justify-center p-6 rounded-2xl gap-4 text-[#D9D9D9] bg-[#191D20]"
           >
             <BehanceLogo size={32} />
-            <p>
-
-            Behance
-            </p>
+            <p>Behance</p>
           </Link>
           <Link
             href="https://dribbble.com/edsondiasjunior"
@@ -150,10 +152,7 @@ export default function Cv() {
             className="lg:col-span-3 flex items-center justify-center gap-4 p-6 rounded-2xl text-[#D9D9D9] bg-[#191D20]"
           >
             <DribbbleLogo size={32} />
-            <p>
-
-            Dribbble
-            </p>
+            <p>Dribbble</p>
           </Link>
           <Link
             href="https://github.com/edsondiasjunior"
@@ -161,10 +160,7 @@ export default function Cv() {
             className="lg:col-span-3 flex items-center justify-center p-6 gap-4 rounded-2xl text-[#D9D9D9] bg-[#191D20]"
           >
             <GithubLogo size={32} />
-            <p>
-
-            Github
-            </p>
+            <p>Github</p>
           </Link>
         </div>
 
@@ -189,7 +185,7 @@ export default function Cv() {
             </h2>
             <p className="text-[#D9D9D9] font-[nohemi] text-[1.5rem] lg:text-3xl font-light">
               Intencionalidade <span className="text-[#B2F10C]">/</span> Clareza
-              <span className="text-[#B2F10C]">/</span> Fluidez{" "}
+              <span className="text-[#B2F10C]">/</span> Fluidez
               <span className="text-[#B2F10C]">/</span> Impacto
             </p>
           </div>
