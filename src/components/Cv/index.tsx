@@ -32,7 +32,7 @@ export default function Cv() {
             />
           </div>
 
-          <p className="flex gap-2 text-[#D9D9D9] text-[1.2rem] lg:hidden border rounded-full px-8 py-3">
+          <p className="flex gap-2 text-[#D9D9D9] text-[1rem] lg:text-[1.2rem] lg:hidden border rounded-full px-8 py-3">
             Hello, eu sou o <strong>Junior</strong>{" "}
             <Image
               src="/hand-icon.webp"
@@ -44,7 +44,7 @@ export default function Cv() {
           </p>
         </div>
 
-        <div className="col-span-1 lg:col-span-6 flex flex-col items-center justify-center bg-[#191D20] rounded-3xl p-[3rem] ">
+        <div className="col-span-1 lg:col-span-6 flex flex-col items-center justify-center bg-[#191D20] rounded-3xl p-[1rem] lg:p-[3rem] ">
           <div className=" flex flex-col gap-4">
             <p className=" gap-2 text-[#D9D9D9] text-[1rem] hidden lg:flex w-fit border border-[#7a7a7a] rounded-full px-8 py-3 mb-[1rem]">
               Hello, eu sou o <strong>Junior</strong>{" "}
@@ -56,10 +56,10 @@ export default function Cv() {
                 className="h-[16px] w-[16px]"
               />
             </p>
-            <h1 className="text-[#B2F10C] font-[nohemi] font-bold text-6xl text-center lg:text-start  lg:text-7xl ">
+            <h1 className="text-[#B2F10C] font-[nohemi] font-bold text-[2.5rem] text-center lg:text-start  lg:text-7xl ">
               UI/UX & Web Designer
             </h1>
-            <p className="text-[#D9D9D9] font-[nohemi] text-center lg:text-start text-[20px] font-light">
+            <p className="text-[#D9D9D9] font-[nohemi] text-center lg:text-start text-[1.2rem] font-light">
               Transformando designs em experiências digitais
             </p>
             <div className="flex flex-col lg:flex-row gap-8 items-center mt-6">
@@ -90,10 +90,9 @@ export default function Cv() {
           <VideoPage/>
         </div>
 
-        <div className="col-span-1 lg:col-span-4 bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8 p-[3rem]">
+        <div className="col-span-1 lg:col-span-4 bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8  p-[1rem] lg:p-[3rem]">
           <p className="text-[#D9D9D9] font-[nohemi] text-2xl text-center font-light">
-            Em evolução para <br />
-            <strong className="text-[#B2F10C]">Front-End</strong> Developer
+            Em evolução para<strong className="text-[#B2F10C]"> Front-End</strong> Developer
           </p>
           <div className="flex flex-col gap-6 items-center">
             <div className="flex gap-4">
@@ -174,7 +173,7 @@ export default function Cv() {
           <VideoPage/>
         </div>
 
-        <div className="col-span-4 lg:bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8 p-8">
+        <div className="col-span-4 lg:bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8 p-2">
           <span className="flex items-center gap-2 border-1 border-[#777777] text-[#D9D9D9] py-4 px-6 text-[1.2rem] rounded-full">
             <Image
               className="w-[14px] h-[14px]"
@@ -188,15 +187,15 @@ export default function Cv() {
         </div>
 
         <div className="col-span-8 flex flex-col items-center justify-center bg-[#191D20] rounded-3xl p-[1rem] lg:p-[3rem]">
-          <div className="p-8 flex flex-col gap-12">
-            <h2 className="text-[#D9D9D9] font-[nohemi] text-[2.2rem] lg:text-5xl">
+          <div className="p-2 lg:p-8 flex flex-col gap-4 lg:gap-12">
+            <h2 className="text-[#D9D9D9] font-[nohemi] text-[1.5rem] lg:text-5xl">
               Meu trabalho é guiado por princípios fundamentais que aplico em
               cada projeto
             </h2>
-            <p className="text-[#D9D9D9] font-[nohemi] text-[1.5rem] lg:text-3xl font-light">
-              Intencionalidade <span className="text-[#B2F10C]">/</span> Clareza
-              <span className="text-[#B2F10C]">/</span> Fluidez
-              <span className="text-[#B2F10C]">/</span> Impacto
+            <p className="text-[#D9D9D9] font-[nohemi] text-[1rem] lg:text-3xl font-light">
+              Intencionalidade <span className="text-[#B2F10C]">/</span> Clareza 
+              <span className="text-[#B2F10C]"> /</span> Fluidez 
+              <span className="text-[#B2F10C]"> /</span> Impacto
             </p>
           </div>
         </div>
