@@ -86,10 +86,10 @@ export default function useHeroAnimation() {
     tl.fromTo(
       [".heroSection", ".imgSection", ".bulletsSection"],
       {
-        background: "#0c1517",
+        background: "#000000",
       },
       {
-        background: "#f3f0eb",
+        background: "#000000",
       }
     )
 
@@ -142,10 +142,10 @@ export default function useHeroAnimation() {
       tl.fromTo(
         [".heroSection", ".imgSection", ".bulletsSection"],
         {
-          background: "#0c1517",
+          background: "#000000",
         },
         {
-          background: "#f3f0eb",
+          background: "#000000",
           duration: 2,
         }
       )

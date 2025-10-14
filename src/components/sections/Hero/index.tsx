@@ -9,7 +9,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 
 import heroAnimation from "@/components/animations/timelines/heroAnimation";
-import Asterisc from "@/components/ui/icons/Asterisc";
+// import Asterisc from "@/components/ui/icons/Asterisc";
 
 export function Hero() {
   heroAnimation();
@@ -17,19 +17,19 @@ export function Hero() {
 
   return (
     <>
-      <section className="py-10 lg:grid lg:grid-cols-6 lg:gap-6 lg:p-8  bg-[var(--baseColor)] ">
+      <section className="py-16 lg:grid lg:grid-cols-6 lg:gap-6 lg:p-8  bg-black  ">
         <div className="flex flex-col gap-8 justify-between items-center lg:col-span-6 lg:h-[80vh] lg:p-8 lg:rounded-3xl ">
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-[var(--baseColor)]">
             <p className="flex gap-2 font-[nohemi] text-center text-[1rem] tagDisclamer ">
               Hello, eu sou o <strong> Junior</strong>
               <Image src="/hand.webp" alt="Hand" width={22} height={22} />
             </p>
-            <p className="font-[nohemi] tagDisclamer">
+            <p className="font-[nohemi] text-[var(--baseColor)] tagDisclamer">
               Web designer & Desenvolvedor FronEnd
             </p>
           </div>
 
-          <h1 className="lg:col-span-4 font-[nohemi] text-[var(--lightColor)] text-center lg:text-start  font-normal lg:text-[5rem] heroTitle">
+          <h1 className="lg:col-span-4 font-[nohemi] text-[var(--baseColor)] text-center lg:text-start  font-normal lg:text-[5rem] heroTitle">
             Crio sites que impucionam negócios para gerar mais resultados.
           </h1>
 
@@ -37,8 +37,8 @@ export function Hero() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 overflow-hidden imgSection bg-[var(--baseColor)]">
-        <div className="flex gap-8 w-[7000px] lg:w-[4000] overflow-x-visible imgDivUm bg-[var(--baseColor)]">
+      <section className="flex flex-col gap-8 pb-16 overflow-hidden imgSection bg-black">
+        <div className="flex gap-8 w-[1000px] lg:w-[4000] overflow-x-visible imgDivUm bg-black">
           <Image
             priority={true}
             src="/tela 18.png"
@@ -47,23 +47,23 @@ export function Hero() {
             height={720}
             alt="ui/ux"
           />
-
           <Image
             priority={true}
-            src="/tela 20.png"
-            className="rounded-3xl img2"
-            width={1024}
-            height={720}
-            alt="ui/ux"
-          />
-          <Image
-            priority={true}
-            src="/tela 2.png"
+            src="/tela00.webp"
             className="rounded-3xl"
             width={1024}
             height={720}
             alt="ui/ux"
           />
+          <Image
+            priority={true}
+            src="/tela14.webp"
+            className="rounded-3xl img2"
+            width={1024}
+            height={720}
+            alt="ui/ux"
+          />
+
           <Image
             priority={true}
             src="/tela 22.png"
@@ -105,9 +105,9 @@ export function Hero() {
             alt="ui/ux"
           />
         </div>
-        <div className="flex gap-8 w-[7000px] lg:w-[4000] overflow-x-visible imgDivDois bg-[var(--baseColor)]">
+        <div className="flex gap-8 w-[1000px] lg:w-[4000] overflow-x-visible imgDivDois bg-black">
           <Image
-            src="/tela 20.png"
+            src="/tela14.webp"
             className="rounded-3xl"
             width={1024}
             height={720}
@@ -165,13 +165,13 @@ export function Hero() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 py-10 font-[nohemi] p-4">
+      <section className="flex flex-col gap-16 py-16 font-[nohemi] p-4 relative   ">
         <div className="flex flex-col gap-8 pl-8">
-          <p className="text-[1.5rem]">
+          <p className="text-[1.8rem] text-[#535353]">
             Ter um site profissional é essencial para que você exista na
             internet.
           </p>
-          <p className="text-[1.5rem]">
+          <p className="text-[1.8rem] text-[#535353]">
             Eu crio sites profissionais para que sua presença digital tenha
             muito mais credibilidade e autoridade convertendo e gerando
             resultados cada vez mais.
@@ -179,9 +179,11 @@ export function Hero() {
         </div>
         <article className="flex flex-col gap-4 bg-[#073034] p-12 text-[#ffff] rounded-2xl ">
           <div className="flex flex-col gap-8">
-            <h3 className="text-[#A4E004] text-6xl">Mais de 89% das pessoas</h3>
+            <h3 className="text-[#A4E004] text-6xl ">Mais de 89% das pessoas</h3>
             <div className="flex flex-col gap-4">
-              <p className="text-[1.2rem]">Pesquisam no Google antes de contratar algum serviço. </p>
+              <p className="text-[1.2rem]">
+                Pesquisam no Google antes de contratar algum serviço.{" "}
+              </p>
               <p className="text-[1.2rem]">
                 E você pode estar perdendo muitas oportunidades por não aparecer
                 quando alguém pesquisa pelo serviço que você oferece.

@@ -8,10 +8,12 @@ import {
   DownloadSimple,
   ArrowUpRight,
 } from "@phosphor-icons/react/ssr";
+import VideoPage from "@/components/sections/VideoPage/"
+
 export default function Cv() {
   return (
     <>
-      <section className="flex flex-col lg:grid lg:grid-cols-12 bg-[#151515] p-8 gap-5 font-[nohemi] lg:h-fit xl:h-fit">
+      <section className="flex flex-col lg:grid lg:grid-cols-12 bg-[#151515] p-8 gap-5 font-[nohemi]  ">
         <div className="flex flex-col lg:col-span-2 gap-8 items-center mb-8 lg:mb-0">
           <div className="col-span-1 lg:col-span-2 lg:w-full lg:h-full rounded-full lg:rounded-3xl overflow-hidden ">
             <Image
@@ -82,6 +84,10 @@ export default function Cv() {
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="col-span-12 rounded-3xl lg:hidden">
+          <VideoPage/>
         </div>
 
         <div className="col-span-1 lg:col-span-4 bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8 p-[3rem]">
@@ -162,6 +168,10 @@ export default function Cv() {
             <GithubLogo size={32} />
             <p>Github</p>
           </Link>
+        </div>
+
+        <div className="col-span-12 hidden lg:block rounded-3xl">
+          <VideoPage/>
         </div>
 
         <div className="col-span-4 lg:bg-[#191D20] rounded-3xl flex flex-col items-center justify-center gap-8 p-8">
