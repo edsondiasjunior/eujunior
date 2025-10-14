@@ -2,6 +2,7 @@
 
 import { Medal, Rocket, LaptopMinimalCheck, ChartArea } from "lucide-react";
 import Btn from "@/components/ui/Btn/index";
+import VideoPage from "@/components/sections/VideoPage"
 
 export function Bullets() {
   return (
@@ -92,7 +93,10 @@ export function Bullets() {
           </div>
         </article>
 
-        <div className="flex flex-col gap-8 items-center justify-center z-4 bg-amber-50 sticky top-[5%] h-[90vh] rounded-2xl">
+        <div className="flex flex-col gap-8 items-center justify-between pb-[2rem] z-4 bg-amber-50 sticky top-[5%] h-[90vh] rounded-3xl">
+          <div className="col-span-12 ">
+        <VideoPage />
+      </div>
           <h2 className="font-[nohemi] text-[#022124] text-center font-normal titleSize">
             Pronto para ter um site que trabalha por você?
           </h2>

@@ -1,6 +1,7 @@
 "use client";
 
 import Btn from "@/components/ui/Btn/index";
+import VideoPage from "@/components/sections/VideoPage";
 // import { Player } from "@lottiefiles/react-lottie-player";
 // import Lottie from "lottie-react";
 // import animationDat from "@/components/lottie-hero.json";
@@ -165,6 +166,8 @@ export function Hero() {
         </div>
       </section>
 
+     
+
       <section className="flex flex-col gap-16 py-16 font-[nohemi] p-4 relative   ">
         <div className="flex flex-col gap-8 pl-8">
           <p className="text-[1.8rem] text-[#535353]">
@@ -177,9 +180,12 @@ export function Hero() {
             resultados cada vez mais.
           </p>
         </div>
+        
         <article className="flex flex-col gap-4 bg-[#073034] p-12 text-[#ffff] rounded-2xl ">
           <div className="flex flex-col gap-8">
-            <h3 className="text-[#A4E004] text-6xl ">Mais de 89% das pessoas</h3>
+            <h3 className="text-[#A4E004] text-6xl ">
+              Mais de 89% das pessoas
+            </h3>
             <div className="flex flex-col gap-4">
               <p className="text-[1.2rem]">
                 Pesquisam no Google antes de contratar algum serviço.{" "}
@@ -206,6 +212,7 @@ export function Hero() {
           </div>
         </article>
       </section>
+       
     </>
   );
 }
